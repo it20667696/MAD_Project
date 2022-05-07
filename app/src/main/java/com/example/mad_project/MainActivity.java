@@ -37,9 +37,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                String stringNo = editText_number.getText().toString();
+                String stringNum = editText_number.getText().toString();
 
-                if (stringNo.length() <=0){
+                if (stringNum.length() <=0){
                     Toast.makeText(MainActivity.this, "Enter All Data", Toast.LENGTH_SHORT).show();
                 }else {
                     insert();
