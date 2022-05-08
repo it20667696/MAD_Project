@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l1_blue"
+    tools:context=".home1">
+
+    <ImageView
+        android:id="@+id/S_imageView"
+        android:layout_width="472dp"
+        android:layout_height="586dp"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/roomss" />
+
+
+    <TextView
+        android:id="@+id/S_textView2"
+        android:layout_width="334dp"
+        android:layout_height="86dp"
+        android:layout_marginBottom="120dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="Dialysis is a procedure to remove waste products and excess fluid from the blood when the kidneys stop working properly"
+        android:textAlignment="center"
+        android:textColor="@color/d4_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/S_textView1"
+        app:layout_constraintVertical_bias="0.139" />
+
+    <Button
+        android:id="@+id/S_button1"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_buttton2"
+        android:text="@string/skip1"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S_textView2"
+        app:layout_constraintVertical_bias="0.507" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/l1_blue"
+    tools:context=".Home3">
+
+    <ImageView
+        android:id="@+id/S_imageView3"
+        android:layout_width="472dp"
+        android:layout_height="586dp"
+        android:contentDescription="@string/todo2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/roomss" />
+
+    <TextView
+        android:id="@+id/S_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="188dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="best_view_in_our_app"
+        android:textColor="@color/d5_blue"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/S_textView6"
+        android:layout_width="360dp"
+        android:layout_height="75dp"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="What is dialysis explain?
+Dialysis is a procedure to remove waste products and excess fluid from the blood when the kidneys stop working properly"
+        android:textAlignment="center"
+        android:textColor="@color/d4_blue"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/S_textView5"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/S_button3"
+        android:layout_width="333dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_buttton2"
+        android:text="@string/skip1"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/S_textView6"
+        app:layout_constraintVertical_bias="0.507"  />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
