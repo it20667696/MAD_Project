@@ -28,7 +28,7 @@ public class monthly_report extends AppCompatActivity {
         btn_add1 = findViewById(R.id.btn_add1);
         btn_view2 = findViewById(R.id.btn_view2);
 
-
+//testing
         btn_add1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
