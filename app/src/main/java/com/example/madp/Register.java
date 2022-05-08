@@ -54,7 +54,7 @@ public class Register extends AppCompatActivity {
 
 
 
-
+//Hello
 
 
         setContentView(R.layout.activity_register);
