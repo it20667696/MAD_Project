@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/doctor"
+
+    android:layout_margin="0dp"
+    android:gravity="center"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/monthly_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contact_doctor"
+        android:textStyle="bold"
+        android:textSize="35sp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textColor="#74020F"
+        />
+
+    <EditText
+        android:id="@+id/patient_id"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/editer3"
+        android:hint="ENTER YOUR PATIENT ID"
+        android:textColorHint="#8C8887"
+        android:minHeight="68dp"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/creatine_level"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/editer3"
+        android:hint="Enter Your Problem"
+        android:textColorHint="#8C8887"
+        android:textSize="24sp"
+        android:minHeight="188dp" />
+
+
+
+
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="submit"
+        android:backgroundTint="#74020F"
+        />
+
+
+
+
+
+</LinearLayout>
