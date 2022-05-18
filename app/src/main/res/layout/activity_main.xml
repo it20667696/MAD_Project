@@ -69,8 +69,8 @@
                     android:weightSum="10">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="80dp"
                         android:layout_weight="8"
                         android:src="@drawable/re">
 
@@ -112,8 +112,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="320dp"
                         android:layout_weight="8"
                         android:src="@drawable/wu">
 
@@ -122,7 +122,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="92dp"
-                        android:text="See urine out water intake"
+                        android:text="Daily intakes"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textSize="18sp">
@@ -154,8 +154,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="320dp"
                         android:layout_weight="8"
                         android:src="@drawable/sre">
 
@@ -164,7 +164,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="92dp"
-                        android:text="See urine out water intake"
+                        android:text="See intakes"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textSize="18sp">
@@ -195,8 +195,8 @@
                     android:layout_height="wrap_content">
 
                     <ImageView
-                        android:layout_width="70dp"
-                        android:layout_height="70dp"
+                        android:layout_width="120dp"
+                        android:layout_height="260dp"
                         android:layout_weight="8"
                         android:src="@drawable/dc">
 
@@ -205,7 +205,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="92dp"
-                        android:text="See urine out water intake"
+                        android:text="contact the doctor"
                         android:textAlignment="center"
                         android:textColor="#000"
                         android:textSize="18sp">

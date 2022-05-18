@@ -9,7 +9,7 @@ import androidx.cardview.widget.CardView;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private CardView card1,card2,card4;
+    private CardView card1,card2,card3,card4;
 
 
 
@@ -20,10 +20,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         card1 = (CardView) findViewById(R.id.report1);
         card2 = (CardView) findViewById(R.id.report2);
+        card3 = (CardView) findViewById(R.id.report3);
         card4 = (CardView) findViewById(R.id.report4);
 
         card1.setOnClickListener(this);
         card2.setOnClickListener(this);
+        card3.setOnClickListener(this);
         card4.setOnClickListener(this);
     }
 
@@ -40,6 +42,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             case R.id.report2:
                 i = new Intent(this,Measure.class);
+                startActivity(i);
+                break;
+
+            case R.id.report3:
+                i = new Intent(this,main2.class);
                 startActivity(i);
                 break;
 
