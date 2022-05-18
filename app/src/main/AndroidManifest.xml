@@ -10,16 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DialysisSheduler">
         <activity
-            android:name=".view"
+            android:name=".main2"
+            android:exported="false" />
+        <activity
+            android:name=".Measure"
             android:exported="false" />
         <activity
             android:name=".view_measure"
             android:exported="false" />
         <activity
             android:name=".contact_doctor"
-            android:exported="false" />
-        <activity
-            android:name=".Measure"
             android:exported="false" />
         <activity
             android:name=".monthly_report"

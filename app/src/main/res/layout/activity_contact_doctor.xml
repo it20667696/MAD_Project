@@ -10,7 +10,7 @@
     android:layout_margin="0dp"
     android:gravity="center"
 
-    tools:context=".MainActivity">
+    tools:context=".contact_doctor">
 
     <TextView
         android:id="@+id/monthly_report"
@@ -29,14 +29,16 @@
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
+        android:autofillHints=""
         android:background="@drawable/editer3"
         android:hint="ENTER YOUR PATIENT ID"
-        android:textColorHint="#8C8887"
         android:minHeight="68dp"
-        android:autofillHints="" />
+        android:text="@string/patient_id"
+        android:textColor="#E4E0E0"
+        android:textColorHint="#8C8887" />
 
     <EditText
-        android:id="@+id/creatine_level"
+        android:id="@+id/message"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -44,20 +46,39 @@
         android:hint="Enter Your Problem"
         android:textColorHint="#8C8887"
         android:textSize="24sp"
-        android:minHeight="188dp" />
-
-
-
-
+        android:minHeight="188dp"
+        android:autofillHints=""
+          />
 
 
     <Button
+        android:id="@+id/submit"
+
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/submit"
-        android:text="submit"
         android:backgroundTint="#74020F"
-        />
+        android:text="submit"/>
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#74020F"
+        android:text="@string/view" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#74020F"
+        android:text="@string/edit" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#74020F"
+        android:text="@string/update" />
 
 
 

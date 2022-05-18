@@ -3,4 +3,9 @@
     <string name="contact_doctor">Contact Doctor</string>
     <string name="water_level">wlevel</string>
     <string name="urine_level">ulevel</string>
+    <string name="patient_id">patient id</string>
+    <string name="submit">submit</string>
+    <string name="view">view</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
 </resources>

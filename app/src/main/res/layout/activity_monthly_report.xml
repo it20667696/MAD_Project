@@ -24,24 +24,26 @@
         />
 
     <EditText
-        android:id="@+id/patient_id"
+        android:id="@+id/patientId"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/editer3"
         android:hint="ENTER YOUR PATIENT ID"
-        android:textColorHint="#DD290E"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="#EDE5E5"
+        android:textColorHint="#D82B0E" />
 
     <EditText
-        android:id="@+id/creatine_level"
+        android:id="@+id/cLevel"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:background="@drawable/editer3"
         android:hint="SERUM CREATININE LEVEL"
-        android:textColorHint="#DD290E"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="#EDE6E6"
+        android:textColorHint="#DD290E" />
 
     <EditText
         android:id="@+id/gfr"
@@ -50,8 +52,9 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/editer3"
         android:hint="eGFR"
-        android:textColorHint="#DD290E"
-        android:minHeight="48dp" />
+        android:minHeight="48dp"
+        android:textColor="#EDEAEA"
+        android:textColorHint="#DD290E" />
 
     <EditText
         android:id="@+id/urea"
@@ -60,31 +63,12 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/editer3"
         android:hint="UREA LEVEL"
-        android:textColorHint="#DD290E"
+        android:minHeight="48dp"
 
-        android:minHeight="48dp" />
+        android:textColor="#E8DFDF"
+        android:textColorHint="#DD290E" />
 
-    <EditText
-        android:id="@+id/pottasium"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/editer3"
-        android:hint="pottasium"
-        android:textColorHint="#DD290E"
 
-        android:minHeight="48dp" />
-
-    <EditText
-        android:id="@+id/sodium"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/editer3"
-        android:hint="sodium"
-        android:textColorHint="#DD290E"
-
-        android:minHeight="48dp" />
 
 
 
