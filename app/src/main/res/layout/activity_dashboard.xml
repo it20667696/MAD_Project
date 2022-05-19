@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/microsoftteams_image__2_"
+    tools:context=".Dashboard">
+
+    <Button
+        android:id="@+id/viewD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btnstylesel"
+        android:text="@string/viewD"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="414dp"
+        android:layout_height="410dp"
+        android:layout_marginBottom="184dp"
+        android:background="@android:drawable/editbox_dropdown_light_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/showAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="25sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="158dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btnclicked"
+        android:text="@string/log_out"
+        android:textColor="#EFE9E9"
+        android:textColorHighlight="#C52323"
+        android:textColorHint="#C69797"
+        android:textColorLink="#AA1F1F"
+        android:textSize="20sp"
+        app:iconPadding="@android:dimen/app_icon_size"
+        app:layout_constraintBottom_toBottomOf="@+id/viewD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toEndOf="@+id/viewD"
+        app:layout_constraintTop_toTopOf="@+id/viewD"
+        app:layout_constraintVertical_bias="0.0"
+        app:rippleColor="#CA4F4F" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

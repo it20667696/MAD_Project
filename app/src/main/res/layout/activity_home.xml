@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:background="@drawable/microsoftteams_image__1_"
+    android:orientation="vertical"
+    tools:context="com.example.madp.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="103dp"
+            android:layout_height="137dp"
+            android:layout_weight="1"
+            android:background="@drawable/free_user_group_icon_296_thumb">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/UserM"
+
+            android:layout_width="285dp"
+            android:layout_height="139dp"
+
+            android:paddingLeft="10dp"
+            android:text="@string/UserM"
+            android:textAlignment="gravity"
+            android:textColor="#BF1F1F"
+            android:textSize="40dp"
+            android:textStyle="bold">
+
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="20dp"
+        android:layout_weight="6"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:background="#C5EDE7"
+            android:columnOrderPreserved="false"
+            android:padding="14dp"
+            android:rowCount="2">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/report1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/free_user_group_icon_296_thumb">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Logged Users"
+                        android:textAlignment="center"
+                        android:textColor="#FF5722"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/report2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="82dp"
+                        android:layout_height="70dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/_41_2414375_feedback_png_free_download_customer_feedback_transparent_png">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:text="Feed back"
+                        android:textAlignment="center"
+                        android:textColor="#FF5722"
+                        android:textSize="18sp"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/report4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical"
+                    android:weightSum="10">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="202dp"
+                        android:layout_weight="8"
+                        android:background="@drawable/download">
+
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/regB"
+                        android:layout_width="85dp"
+                        android:layout_height="92dp"
+                        android:text="Register"
+                        android:textAlignment="center"
+                        android:textColor="#FF5722"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
