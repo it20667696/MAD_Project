@@ -24,13 +24,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         dbHelper = new DBHelper(this);
 
         card1 = (CardView) findViewById(R.id.report1);
-        //card2 = (CardView) findViewById(R.id.report2);
-        //card3 = (CardView) findViewById(R.id.report3);
+        card2 = (CardView) findViewById(R.id.report2);
+        card3 = (CardView) findViewById(R.id.report4);
         //card4 = (CardView) findViewById(R.id.report4);
 
         card1.setOnClickListener(this);
-        // card2.setOnClickListener(this);
-        //card3.setOnClickListener(this);
+         card2.setOnClickListener(this);
+       card3.setOnClickListener(this);
         //card4.setOnClickListener(this);
     }
 
@@ -49,7 +49,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(i);
                 break;
 
-            case R.id.report3:
+            case R.id.report4:
                 i = new Intent(this,Register.class);
                 startActivity(i);
                 break;

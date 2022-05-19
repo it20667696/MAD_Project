@@ -91,7 +91,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20sp"
-            android:background="@drawable/lightblue"
             android:paddingLeft="8sp"
             android:text="Show Password"
             android:textSize="15sp" />
@@ -101,10 +100,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="25sp"
-            android:background="@drawable/btnstylesel"
+            android:backgroundTint="#224453"
             android:clickable="true"
             android:onClick="signinBtn"
-            android:text="Sign In"
+            android:text="Create Account"
             android:textColor="#fff" />
 
     </LinearLayout>

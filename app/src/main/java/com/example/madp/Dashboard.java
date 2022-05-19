@@ -47,7 +47,7 @@ public class Dashboard extends AppCompatActivity {
                     while (res.moveToNext()){
                         stringB.append("Name: "+res.getString(0)+"\n");
                         stringB.append("Username: "+res.getString(1)+"\n");
-                        stringB.append("Password: "+res.getString(2)+"\n");
+
                     }
                     show.setText(stringB.toString());
                     Toast.makeText(Dashboard.this, "Data showed", Toast.LENGTH_LONG).show();

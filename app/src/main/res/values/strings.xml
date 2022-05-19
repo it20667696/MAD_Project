@@ -29,4 +29,7 @@
     <string name="View">View</string>
     <string name="EditFb">Edit</string>
     <string name="Delete">Delete</string>
+    <string name="Fbdelete">Delete</string>
+    <string name="Fname">Name</string>
+    <string name="inputFbk">Enter Your Feedback</string>
 </resources>
