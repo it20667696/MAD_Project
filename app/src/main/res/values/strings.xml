@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">#MADP</string>
+    <string name="us_n">Username</string>
+    <string name="us_n1" />
+    <string name="C_pass">Confirm Password</string>
+    <string name="L_pass">Password</string>
+    <string name="Log_b">Login</string>
+    <string name="C_Acc">Create Account</string>
+    <string name="confirmPass">Confirm Password</string>
+    <string name="btnSignup">Sign Up</string>
+    <string name="btnLogin">Sign In</string>
+    <string name="btnL">Sign In</string>
+    <string name="Topic">SIGN UP</string>
+    <string name="Dashboard">Dashboard</string>
+    <string name="Dash">Welcome To Dialysis Schedular</string>
+    <string name="pic">DIALYSIS LOGIN</string>
+    <string name="sign">Don\'t You Have An Account?</string>
+    <string name="log_out">Log Out</string>
+    <string name="top">Dialysis Schedular</string>
+    <string name="frgtPw" />
+    <string name="Fp">Forgot Password</string>
+    <string name="UserM">User Management</string>
+    <string name="viewD">User Deatails</string>
+    <string name="Feed">Feedback</string>
+    <string name="Efbk">Eter your Feedback</string>
+    <string name="EFB">Enter Your Feedback</string>
+    <string name="FbBox" />
+    <string name="Submit">Submit</string>
+    <string name="View">View</string>
+    <string name="EditFb">Edit</string>
+    <string name="Delete">Delete</string>
 </resources>

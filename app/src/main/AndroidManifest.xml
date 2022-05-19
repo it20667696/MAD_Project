@@ -10,13 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MADP">
         <activity
-            android:name=".HomeActivity"
-            android:exported="false" />
-        <activity
             android:name=".Feedback"
             android:exported="false" />
         <activity
+            android:name=".Mainpage"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
             android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

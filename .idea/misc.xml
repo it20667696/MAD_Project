@@ -3,11 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/arrow.xml" value="0.152" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/btnclicked.xml" value="0.152" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/btnstyle.xml" value="0.152" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/btnstylesel.xml" value="0.152" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/etstyle.xml" value="0.152" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable-v24/textline.xml" value="0.152" />
         <entry key="..\:/MAD/Akmal/app/src/main/res/drawable/bg.xml" value="0.2515" />
-        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_feedback.xml" value="0.12664640324214793" />
-        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_home.xml" value="0.12664640324214793" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable/bg23.xml" value="0.146" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/drawable/lightblue.xml" value="0.2555" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_feedback.xml" value="0.264" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_login_page.xml" value="0.25" />
         <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_main2.xml" value="0.12182971014492754" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_mainpage.xml" value="0.264" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/activity_register.xml" value="0.176" />
+        <entry key="..\:/MAD/Akmal/app/src/main/res/layout/fdbck2.xml" value="0.18958333333333333" />
       </map>
     </option>
   </component>
