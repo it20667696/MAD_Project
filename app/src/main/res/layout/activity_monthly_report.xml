@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/background3"
+    android:background="@drawable/ba1"
     android:layout_margin="0dp"
     android:gravity="center"
 
@@ -15,13 +15,12 @@
         android:id="@+id/monthly_report"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="ADD MONTHLY REPORT"
-        android:textStyle="bold"
-        android:textSize="35dp"
         android:gravity="center_vertical"
         android:padding="10dp"
-        android:textColor="#74020F"
-        />
+        android:text="@string/monthly_report"
+        android:textColor="#08303C"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/patientId"
@@ -30,43 +29,47 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/editer3"
         android:hint="ENTER YOUR PATIENT ID"
+        android:inputType="text"
         android:minHeight="48dp"
-        android:textColor="#EDE5E5"
-        android:textColorHint="#D82B0E" />
+        android:textColor="#031037"
+        android:textColorHint="#599BBF" />
 
     <EditText
         android:id="@+id/cLevel"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:inputType="number"
         android:background="@drawable/editer3"
         android:hint="SERUM CREATININE LEVEL"
         android:minHeight="48dp"
-        android:textColor="#EDE6E6"
-        android:textColorHint="#DD290E" />
+        android:textColor="#031037"
+        android:textColorHint="#599BBF" />
 
     <EditText
         android:id="@+id/gfr"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:inputType="number"
         android:background="@drawable/editer3"
         android:hint="eGFR"
         android:minHeight="48dp"
-        android:textColor="#EDEAEA"
-        android:textColorHint="#DD290E" />
+        android:textColor="#031037"
+        android:textColorHint="#599BBF" />
 
     <EditText
         android:id="@+id/urea"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:inputType="number"
         android:background="@drawable/editer3"
         android:hint="UREA LEVEL"
         android:minHeight="48dp"
 
-        android:textColor="#E8DFDF"
-        android:textColorHint="#DD290E" />
+        android:textColor="#031037"
+        android:textColorHint="#599BBF" />
 
 
 
@@ -77,9 +80,10 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_add1"
-        android:text="ADD"
-        android:backgroundTint="#74020F"
+        android:id="@+id/btn_submit2"
+        android:text="Submit"
+
+        android:backgroundTint="#224453"
         />
 
 
@@ -88,9 +92,17 @@
     <Button
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:id="@+id/btn_view2"
-        android:text="submit"
-        android:backgroundTint="#74020F"
+        android:id="@+id/btn_display2"
+        android:text="@string/view"
+        android:backgroundTint="#224453"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_edit2"
+        android:text="edit"
+        android:backgroundTint="#224453"
         />
 
 

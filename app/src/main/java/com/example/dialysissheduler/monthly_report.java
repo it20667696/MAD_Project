@@ -1,5 +1,8 @@
 package com.example.dialysissheduler;
 
+import android.content.ContentValues;
+import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,43 +15,103 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class monthly_report extends AppCompatActivity {
 
-    Button btn_add1;
+
+    DatabaseHelper4 dBmain;
+    SQLiteDatabase sqLiteDatabase;
     EditText patientId, cLevel,gfr,urea;
+    Button btn_submit2, btn_display2, btn_edit2;
+    int id = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_monthly_report);
+        dBmain = new DatabaseHelper4(this);
+        //create object
+        findid();
+        insertData();
+        cleardata();
+        editdata();
+    }
 
-        final DatabaseHelper2 helper = new DatabaseHelper2(this);
-        patientId = findViewById(R.id.patientId);
-        cLevel = findViewById(R.id.cLevel);
-        gfr = findViewById(R.id.gfr);
-        urea = findViewById(R.id.urea);
+    private void editdata() {
+        if (getIntent().getBundleExtra("studata") != null) {
+            Bundle bundle = getIntent().getBundleExtra("studata");
+            id = bundle.getInt("id");
+            patientId.setText(bundle.getString("patientId"));
+            cLevel.setText(bundle.getString("cLevel"));
+            gfr.setText(bundle.getString("gfr"));
+            urea.setText(bundle.getString("urea"));
 
-        findViewById(R.id.btn_add1).setOnClickListener(new View.OnClickListener() {
+            btn_edit2.setVisibility(View.VISIBLE);
+            btn_submit2.setVisibility(View.GONE);
+        }
+    }
+
+    private void cleardata() {
+        patientId.setText("");
+        cLevel.setText("");
+        urea.setText("");
+        gfr.setText("");
+    }
+
+    private void insertData() {
+        btn_submit2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!patientId.getText().toString().isEmpty() && !cLevel.getText().toString().isEmpty() && !gfr.getText().toString().isEmpty() && !urea.getText().toString().isEmpty()) {
-                    if (helper.insert(patientId.getText().toString(), cLevel.getText().toString(), gfr.getText().toString(), urea.getText().toString())) {
-                        Toast.makeText(monthly_report.this, "Inserted", Toast.LENGTH_LONG).show();
+                ContentValues contentValues = new ContentValues();
+                contentValues.put("patientId", patientId.getText().toString().trim());
+                contentValues.put("cLevel", cLevel.getText().toString().trim());
+                contentValues.put("gfr", gfr.getText().toString().trim());
+                contentValues.put("urea", urea.getText().toString().trim());
 
-                        patientId.setText("");
-                        cLevel.setText("");
-                        gfr.setText("");
-                        urea.setText("");
-                        patientId.requestFocus();
-                    } else {
-                        Toast.makeText(monthly_report.this, "NOT Inserted", Toast.LENGTH_LONG).show();
-                    }
+                sqLiteDatabase = dBmain.getWritableDatabase();
+                Long recid = sqLiteDatabase.insert("reports", null, contentValues);
+                if (recid != null) {
+                    Toast.makeText(monthly_report.this, "successfully insert", Toast.LENGTH_SHORT).show();
+                    cleardata();
                 } else {
-                    patientId.setError("Enter patient id");
-                    cLevel.setError("Enter creatine level");
-                    gfr.setError("Enter gfr");
-                    urea.setError("Enter urea level");
+                    Toast.makeText(monthly_report.this, "something wrong try again", Toast.LENGTH_SHORT).show();
                 }
             }
         });
+        btn_display2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(monthly_report.this, main3.class);
+                startActivity(intent);
+            }
+        });
+        btn_edit2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ContentValues contentValues = new ContentValues();
+                contentValues.put("patientId", patientId.getText().toString().trim());
+                contentValues.put("cLevel", cLevel.getText().toString().trim());
+                contentValues.put("gfr", gfr.getText().toString().trim());
+                contentValues.put("urea", urea.getText().toString().trim());
 
+                sqLiteDatabase = dBmain.getWritableDatabase();
+                long recid = sqLiteDatabase.update("reports", contentValues, "id=" + id, null);
+                if (recid != -1) {
+                    Toast.makeText(monthly_report.this, "Update successfully", Toast.LENGTH_SHORT).show();
+                    btn_submit2.setVisibility(View.VISIBLE);
+                    btn_edit2.setVisibility(View.GONE);
+                    cleardata();
+                } else {
+                    Toast.makeText(monthly_report.this, "something wrong try again", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+    private void findid() {
+        patientId = (EditText) findViewById(R.id.patientId);
+        cLevel = (EditText) findViewById(R.id.cLevel);
+        gfr = (EditText) findViewById(R.id.gfr);
+        urea = (EditText) findViewById(R.id.urea );
+        btn_submit2 = (Button) findViewById(R.id.btn_submit2);
+        btn_display2 = (Button) findViewById(R.id.btn_display2);
+        btn_edit2 = (Button) findViewById(R.id.btn_edit2);
     }
 }

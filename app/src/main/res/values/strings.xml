@@ -8,4 +8,10 @@
     <string name="view">view</string>
     <string name="edit">Edit</string>
     <string name="update">Update</string>
+    <string name="medical_report">MY Medical Reports</string>
+    <string name="kidney_report">Kidney Reports</string>
+    <string name="Daily_intakes">Daily Intakes</string>
+    <string name="seeintakes">SeeIntakes</string>
+    <string name="seemedical">See Medical Reports</string>
+    <string name="monthly_report">ADD MONTHLY REPORTS</string>
 </resources>

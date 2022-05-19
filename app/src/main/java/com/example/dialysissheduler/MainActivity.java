@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
             case R.id.report4:
-                i = new Intent(this,contact_doctor.class);
+                i = new Intent(this,main3.class);
                 startActivity(i);
                 break;
         }

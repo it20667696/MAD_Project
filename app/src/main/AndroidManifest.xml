@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DialysisSheduler">
         <activity
+            android:name=".main3"
+            android:exported="false" />
+        <activity
             android:name=".main2"
             android:exported="false" />
         <activity
